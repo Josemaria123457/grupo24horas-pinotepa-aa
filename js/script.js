@@ -68,3 +68,10 @@
     addFloatingWhatsApp();
   }, { once: true });
 })();
+
+
+if (document.documentElement.dataset.layoutReady === 'true') {
+  initialiseHeader();
+  initialiseAnimations();
+  addFloatingWhatsApp();
+}
