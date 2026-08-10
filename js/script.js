@@ -67,11 +67,10 @@
     initialiseAnimations();
     addFloatingWhatsApp();
   }, { once: true });
+
+  if (root.dataset.layoutReady === 'true') {
+    initialiseHeader();
+    initialiseAnimations();
+    addFloatingWhatsApp();
+  }
 })();
-
-
-if (document.documentElement.dataset.layoutReady === 'true') {
-  initialiseHeader();
-  initialiseAnimations();
-  addFloatingWhatsApp();
-}
